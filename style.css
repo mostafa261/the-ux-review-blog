@@ -1,0 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mobile_Na {
+  display: flex;
+  position: sticky;
+  top: 10px;
+  margin: 0 10px 10px;
+  z-index: 1;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-family: Exo, sans-serif;
+  font-size: 22.5px;
+  line-height: 27px;
+  font-weight: 600;
+}
+.list_icon {
+  background-color: rgb(255, 255, 255);
+  height: 42px;
+  width: 42px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid black;
+  box-shadow: 3px 3px black;
+}
+.list_icon a i {
+  color: black;
+}
+.ux_review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#side_menu {
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  width: 250px;
+  height: 100vh;
+  border: 2px solid red;
+  background-color: white;
+  border-left: 4px solid black;
+  transition: right 0.5s ease;
+  z-index: 2;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+.top_menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 7px;
+  margin-top: 10px;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.side_menu_partion {
+  padding: 10px;
+}
+.Hero {
+  background-color: #fff185;
+}
+.bottom_menu ul {
+  list-style: none;
+  padding-block: 10px;
+  padding-left: 6px;
+}
+.bottom_menu ul li {
+  padding-bottom: 10px;
+}
+.bottom_menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.close_icon {
+  width: 42px;
+  height: 42px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px !important;
+}
+.top_menu:first-child {
+  display: flex;
+  align-items: center;
+}
+
+#side_menu:target {
+  right: 0;
+}
+#side_menu:target + .overlay {
+  display: block;
+}
