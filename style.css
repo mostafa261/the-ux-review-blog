@@ -189,6 +189,8 @@ html {
 }
 .buttons {
   display: flex;
+  margin-left: 8px;
+}
 }
 .button1 {
   display: flex;
@@ -200,10 +202,11 @@ html {
   line-height: 21px;
   font-weight: 700;
   font-family: EXO, sans-serif;
-  padding: 14px;
+  padding-block: 14px;
   margin-left: 23px;
   box-shadow: 5px 5px black;
   transition: 0.5s;
+  padding-inline: 5px;
 }
 .button2 {
   color: black;
