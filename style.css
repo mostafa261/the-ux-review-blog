@@ -191,7 +191,7 @@ html {
   display: flex;
   margin-left: 8px;
 }
-}
+
 .button1 {
   display: flex;
   justify-content: center;
@@ -429,6 +429,7 @@ html {
 }
 .All_Categories h4 {
   margin-bottom: 10px;
+
 }
 .span_1 {
   background-color: #fffac2;
@@ -771,6 +772,7 @@ html {
   flex-direction: column;
   gap: 35px;
 }
+
 .Footer_logo {
   display: flex;
   align-items: center;
@@ -876,4 +878,190 @@ html {
 }
 .Footer_links a:hover {
   color: yellow;
+}
+@media screen and (min-width: 800px) {
+  .Join_content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .Join_right{
+    padding: 44px;
+  }
+  .Join_section{
+      padding-inline: 131px;
+  }
+  .mostafa {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .two_partion {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Hero {
+    padding-inline: 113px;
+    padding-bottom: 86px;
+    padding-top: 38px;
+  }
+  .Image_wrapper {
+   margin-top: 60px;
+    rotate: -4deg;
+    margin-right: 30px;
+  }
+  .Image_wrapper img {
+    display: block;
+    width: 538px;
+    height: 415px;
+    border: 4px solid black;
+    rotate: 6.1deg;
+    box-shadow: 5px 5px black;
+  }
+  .Feature {
+    position: absolute;
+    top: 36px;
+    right: -30px;
+    color: #ffffff;
+    background-color: rgb(172, 21, 21);
+    z-index: 1;
+    padding-block: 9px;
+    padding-inline: 20px;
+    rotate: 47deg;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+  }
+  .Trired_shape {
+    position: absolute;
+    top: 436px;
+    left: 285px;
+    width: 73px;
+    height: 73px;
+    background-color: #e6d977;
+    opacity: 70%;
+    rotate: 47deg;
+    z-index: 0;
+  }
+  .partion_one p {
+    
+    font-size: 24px;
+    line-height: 32px;
+    padding: 12px;
+    font-weight: 500;
+    padding: 16px;
+    margin: 0px 0px 32px 30px
+    background-color: aliceblue;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+  }
+  .button1 {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: aliceblue;
+  border: 4px solid black;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+  font-family: EXO, sans-serif;
+  padding-block: 17px;
+  margin-left: 23px;
+  box-shadow: 5px 5px black;
+  transition: 0.5s;
+  padding-inline: 19px;
+}
+.button2 {
+  color: black;
+  background-color: aliceblue;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+  padding-inline: 45px;
+}
+.partion_one{
+  position: relative;
+}
+.Footer_without_Bottom{
+   display: flex;
+   padding-inline: 84px;
+   gap: 128px;
+}
+.Footer_bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 77px;
+}
+.tansiq_Articles_1{
+  display: flex;
+  flex-direction: column;
+}
+.tansiq_Articles{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.tansiq_Articles_2 {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 10px;
+  align-self: flex-start;
+}
+.ARTICLES_content_spacing{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+.Card_Details {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.P_text{margin-left: 45px;
+  margin-bottom: 5px;}
+
+  .All_Categories h4 {
+  margin-bottom: 10px;
+  font-size:30px;
+  line-height:36px;
+  font-weight:900;
+}
+.P_text h4 {
+  font-size: 23px;
+  line-height: 26px;
+  margin: 0px 0px 9px;
+  font-weight: 900;
+  margin-block: 9px;
+}
+.P_text p{
+  font-size: 18px;
+  line-height: 29.25px;
+  font-weight: 400;
+}
+.Image_text img{
+ 
+  width: 140px;
+  height: 115px;
+
+}
+.ARTICLES_content_spacing{
+    padding-inline: 30px;
+   
+}
+.Articles_Allcontent{
+  padding-inline: 170px;
+}
+.Buttons_Articles {
+  background-color: black;
+  color: #ffffff;
+  width: fit-content;
+  margin-left: 234px;
+  padding-inline: 30px;
+  padding-block: 10px;
+  box-shadow: 3px 3px black;
+  transition: 0.5s;
+}
 }
