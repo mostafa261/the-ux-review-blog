@@ -5,16 +5,27 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: EXO sans-serif;
+  font-family: Exo, sans-serif;
+}
+
+body {
+  background-color: #fff185;
+}
+#Articles {
+  background-color: white;
+}
+section[id] {
+  scroll-margin-top: 90px;
 }
 
 .mobile_Na {
   display: flex;
   position: sticky;
   top: 10px;
-  margin: 0 10px 10px;
+  margin: 10px 10px 0;
   z-index: 2;
   justify-content: space-between;
+  align-items: center;
   padding: 12px;
   background-color: white;
   border: 2px solid black;
@@ -39,6 +50,10 @@ html {
 }
 .list_icon a i {
   color: black;
+}
+.desktop_links,
+.subscribe_btn {
+  display: none;
 }
 .ux_review {
   display: flex;
@@ -154,7 +169,6 @@ html {
 }
 #home {
   background-color: #fff185;
-  border: 4px solid black;
 }
 .Trend {
   height: 10px;
@@ -260,6 +274,9 @@ html {
   border: 4px solid black;
   rotate: -2deg;
   box-shadow: 5px 5px black;
+}
+#Articles {
+  border: 3px solid black;
 }
 .Articles_section {
   margin-block: 50px;
@@ -429,7 +446,6 @@ html {
 }
 .All_Categories h4 {
   margin-bottom: 10px;
-
 }
 .span_1 {
   background-color: #fffac2;
@@ -634,7 +650,6 @@ html {
 .Author_social i {
   font-size: 18px;
 }
-/* الخط: الـ * عندك بتحط font-family على كل عنصر، فبحدده على كل العناصر ما عدا الأيقونات */
 .Join_section :not(i),
 .Site_footer :not(i) {
   font-family: Exo, sans-serif;
@@ -763,7 +778,6 @@ html {
   color: #6b6b6b;
 }
 
-/* ===== Footer ===== */
 .Site_footer {
   background-color: #000000;
   color: #ffffff;
@@ -879,17 +893,56 @@ html {
 .Footer_links a:hover {
   color: yellow;
 }
+
 @media screen and (min-width: 800px) {
+  .list_icon {
+    display: none;
+  }
+  .mobile_Na {
+    padding: 12px 16px;
+    margin-inline: 120px;
+  }
+  .desktop_links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .desktop_links a {
+    text-decoration: none;
+    color: black;
+    font-family: Exo, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .desktop_links i {
+    color: #cbd0d9;
+    font-size: 14px;
+  }
+  .subscribe_btn {
+    display: block;
+    background-color: #ffd35c;
+    color: black;
+    text-decoration: none;
+    font-family: Exo, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+  }
+
+  /* ===== باقي الصفحة ===== */
   .Join_content {
     display: flex;
     flex-direction: row;
     gap: 40px;
   }
-  .Join_right{
+  .Join_right {
     padding: 44px;
   }
-  .Join_section{
-      padding-inline: 131px;
+  .Join_section {
+    padding-inline: 131px;
   }
   .mostafa {
     display: flex;
@@ -906,7 +959,7 @@ html {
     padding-top: 38px;
   }
   .Image_wrapper {
-   margin-top: 60px;
+    margin-top: 60px;
     rotate: -4deg;
     margin-right: 30px;
   }
@@ -943,125 +996,135 @@ html {
     z-index: 0;
   }
   .partion_one p {
-    
     font-size: 24px;
     line-height: 32px;
-    padding: 12px;
-    font-weight: 500;
     padding: 16px;
-    margin: 0px 0px 32px 30px
+    font-weight: 500;
+    margin: 0px 0px 32px 30px;
     background-color: aliceblue;
     border: 2px solid black;
     box-shadow: 3px 3px black;
   }
   .button1 {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  color: aliceblue;
-  border: 4px solid black;
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 700;
-  font-family: EXO, sans-serif;
-  padding-block: 17px;
-  margin-left: 23px;
-  box-shadow: 5px 5px black;
-  transition: 0.5s;
-  padding-inline: 19px;
-}
-.button2 {
-  color: black;
-  background-color: aliceblue;
-  font-size: 15px;
-  line-height: 21px;
-  font-weight: 700;
-  padding-inline: 45px;
-}
-.partion_one{
-  position: relative;
-}
-.Footer_without_Bottom{
-   display: flex;
-   padding-inline: 84px;
-   gap: 128px;
-}
-.Footer_bottom{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-inline: 77px;
-}
-.tansiq_Articles_1{
-  display: flex;
-  flex-direction: column;
-}
-.tansiq_Articles{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-}
-.tansiq_Articles_2 {
-  display: flex;
-  flex-direction: column;
-  position: sticky;
-  top: 10px;
-  align-self: flex-start;
-}
-.ARTICLES_content_spacing{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
-}
-.Card_Details {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-.P_text{margin-left: 45px;
-  margin-bottom: 5px;}
-
-  .All_Categories h4 {
-  margin-bottom: 10px;
-  font-size:30px;
-  line-height:36px;
-  font-weight:900;
-}
-.P_text h4 {
-  font-size: 23px;
-  line-height: 26px;
-  margin: 0px 0px 9px;
-  font-weight: 900;
-  margin-block: 9px;
-}
-.P_text p{
-  font-size: 18px;
-  line-height: 29.25px;
-  font-weight: 400;
-}
-.Image_text img{
- 
-  width: 140px;
-  height: 115px;
-
-}
-.ARTICLES_content_spacing{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    border: 4px solid black;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+    font-family: EXO, sans-serif;
+    padding-block: 17px;
+    margin-left: 23px;
+    box-shadow: 5px 5px black;
+    transition: 0.5s;
+    padding-inline: 19px;
+  }
+  .button2 {
+    color: black;
+    background-color: aliceblue;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+    padding-inline: 45px;
+  }
+  .partion_one {
+    position: relative;
+  }
+  .Footer_without_Bottom {
+    display: flex;
+    padding-inline: 84px;
+    gap: 128px;
+  }
+  .Footer_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 77px;
+  }
+  .tansiq_Articles_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .tansiq_Articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .tansiq_Articles_2 {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+  }
+  .ARTICLES_content_spacing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
     padding-inline: 30px;
-   
+  }
+  .Card_Details {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .P_text {
+    margin-left: 45px;
+    margin-bottom: 5px;
+  }
+  .All_Categories h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+  }
+  .P_text h4 {
+    font-size: 23px;
+    line-height: 26px;
+    margin: 0px 0px 9px;
+    font-weight: 900;
+    margin-block: 9px;
+  }
+  .P_text p {
+    font-size: 18px;
+    line-height: 29.25px;
+    font-weight: 400;
+  }
+  .Image_text img {
+    width: 140px;
+    height: 115px;
+  }
+  .Articles_Allcontent {
+    padding-inline: 170px;
+  }
+  .Buttons_Articles {
+    background-color: black;
+    color: #ffffff;
+    width: fit-content;
+    margin-left: 234px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    box-shadow: 3px 3px black;
+    transition: 0.5s;
+  }
 }
-.Articles_Allcontent{
-  padding-inline: 170px;
-}
-.Buttons_Articles {
-  background-color: black;
-  color: #ffffff;
-  width: fit-content;
-  margin-left: 234px;
-  padding-inline: 30px;
-  padding-block: 10px;
-  box-shadow: 3px 3px black;
-  transition: 0.5s;
-}
+
+@media screen and (min-width: 1100px) {
+  .mobile_Na {
+    padding: 12px 40px;
+  }
+  .desktop_links {
+    gap: 20px;
+  }
+  .desktop_links a,
+  .subscribe_btn {
+    font-size: 16px;
+  }
+  .desktop_links i {
+    font-size: 16px;
+  }
 }
